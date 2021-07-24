@@ -1,0 +1,421 @@
+body{
+    background-color:papayawhip;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/* ul e tag de menu*/
+/*ul{
+    list-style: none;
+}*/
+
+a{
+    text-decoration: none;
+}
+section{
+    width: 100%;
+    height: 95vh;
+    background-image: url(img/meme.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    position: relative;
+}
+/* estilo de navegador trabalhar com menu*/
+nav{
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    height: 70px;
+    background-color: #333;
+    box-shadow: 2px 2px 12px black;
+    overflow: hidden;
+    position: fixed;
+    /* largura*/
+    width: 100%;
+    border-radius: 3px;
+   
+}
+/*nav ul li a :hover{
+   transition: o.5s;
+   background-color:black;
+   color:white;
+}*/
+
+/* arumar o que esta dentro de nossa nave bar*/
+
+/*nav ul{
+  display: flex;
+    
+}*/
+
+/* mexer oque link dos navegador */
+nav  a {
+ /*margin: 30px;*/
+ font-family: calibri;
+ font-size: 25xp;
+ float: right;
+ color:white;
+ font-weight: 800;
+ display: block;
+ padding: 14px 16px;
+ text-decoration: none;
+
+}
+/* para usar classe deve colocar ponto*/
+.logo{
+    font-family: Arial;
+    color:thistle;
+    font-size: 20px;
+    float: left;
+    padding: 14px 16px;
+}
+/* active criei no html e prar dar cor diferente dos outro menus quando eu estiver dentro dessas menu*/
+/* exemplo menu home*/
+.active{
+    font-weight:bold;
+    color:rgb(255, 236, 236);
+    transition: o.5s;
+
+}
+/* mexer a parte de conteudo dos texto*/
+/* p:nth-child(1) mexer paragro por paragrafo*/
+.conteudo-texto p:nth-child(1){
+  font-family:sans-serif;
+  font-weight: bold;
+  color: blueviolet;
+  font-size: 25px;
+}
+.conteudo-texto p:nth-child(2){
+    font-family:Arial;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color:black;
+    font-size: 30px;
+  }
+  .conteudo-texto p:nth-child(3){
+    font-family:Arial;
+    font-weight: bold;
+    color:rebeccapurple;
+    font-size: 20px;
+  }
+  /* mexer em tuda classe**/
+  .conteudo-texto{
+     line-height: 0px;
+     margin: 45px 0px 25px ; 
+  }
+  .conteudo-texto{
+      position: absolute;
+      left: 13%;
+      top: 42%;
+     /* transform: translate(-13%,-42%);*/
+  }
+  .conteudo-texto button{
+      width: 130px;
+      height: 42%;
+      border-radius: 20px;
+      font-family: Helvetica;
+      font-weight: bold;
+      font-size: 14px;
+      outline: none ;
+      margin: 0px 10px;
+  }
+.btn1{
+   border: 3px solid blanchedalmond;
+   color:black;
+
+}
+.btn2{
+    background-color:brown;
+    border: 3px solid;
+    color:black; 
+
+}
+
+
+/*para dar efeito nos botons ao clicar*/
+button:active{
+    transform: scale(1.1);
+}
+/* imagem de fundo do banner*/
+.imgbg{
+    height: 490px;
+    position: absolute;
+    bottom: 0px;
+    left: none;
+    /* para deixar trnsaparente*/
+    transform: translateX(-100%);
+}
+
+.conteudos-sobre{
+
+    width: 80%;
+    height: 330px;
+    background-color: burlywood;
+    border-radius:20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    display: flex;
+    margin: -7% auto 20px auto;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.conteudos-sobre img{
+height: 250px;
+}
+.texto-sobre{
+    width: 550px;
+}
+.conteudos-sobre p:nth-child(1){
+    color:cadetblue;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 23px;
+    line-height:0px;
+}
+
+.conteudos-sobre p:nth-child(2){
+
+    color:black;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight:bold;
+    line-height: 5px;
+}
+.conteudos-sobre p:nth-child(3),
+.conteudos-sobre p:nth-child(4){
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.texto-sobre button{
+    width: 120px;
+    height: 40px ;
+    color: none;
+    border:none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: chartreuse;
+    font-size: 20px;
+}
+
+/* na parte de servicosa */
+.servicos{
+    height: 600px;
+    background-color: #dddddd;
+}
+/* estilizar paragrfo por paragrafo*/
+.sevios-texto p:nth-child(1){
+    font-family: 'arial';
+    font-weight: bold;
+    color: #3d3d3d;
+    font-size: 25px;
+    line-height: 0px;
+
+}
+.sevios-texto p:nth-child(2){
+    font-family: 'arial';
+    font-weight: bold;
+    color: #3d3d3d;
+    font-size: 25px;
+    line-height: 5px;
+
+}
+.sevios-texto p:nth-child(3){
+    font-family: 'arial';
+    color: #3d3d3d;
+
+}
+/* vamos estilizar todo em conjunto*/
+.sevios-texto {
+width: 500px;
+margin: 50px 0px 0px 50px ;
+}
+.box1, .box2, .box3 , .box4 ,.box5, .box6,.box7,.box8{
+width: 300px;
+height: 320px;
+background-repeat: no-repeat;
+background-size: cover;
+box-shadow: 2px 2px 12px black;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border-radius: 20px ;
+}
+/*  conteudo-box*/
+.conteudo-box{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px ;
+
+}/* parte de servico*/
+   
+   /* na parte de servicosa */
+.servicos-1{
+    height: 600px;
+    background-color: #dddddd;
+}
+.sevios-texto-1{
+width: 500px;
+/*margin: 50px 0px 0px 50px ;*/
+margin: 0px;
+}
+/* a  parte da imagens*/
+.banner{
+    background-image: url("img/OsfFKJ0.jpg"); 
+    height: 800px; 
+  }
+  .box1{
+    background-image: url("img/hacker-que-trabalha-usando-o-computador-com-códigos-114101008.jpg");
+  
+}
+.box2{
+  background-image: url("img/analista.jpg");
+
+  
+}
+.box3{
+  background-image: url("img/base.jpg");
+  
+}
+  .box4{
+      background-image: url("img/math-work-4711302_1280.jpg");
+  }
+  .box5{
+    background-image: url("img/hard.jpg");
+    
+}
+.box6{
+    background-image: url("img/OsfFKJ0.jpg");
+    
+}
+.box1 span,
+.box2 span,
+.box3 span,
+.box4 span,
+.box5 span,
+.box6 span{
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:#ffffff ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: calibri;
+    margin-top: 10px;
+}
+/* parte de tilulo da box*/
+.box1 p:nth-child(2),
+.box2 p:nth-child(2),
+.box3 p:nth-child(2),
+.box4 p:nth-child(2),
+.box5 p:nth-child(2),
+.box6 p:nth-child(2){
+    color: white;
+    font-family: arial;
+    font-size: 25px;
+    line-height: 0px;
+    
+
+}
+/* aparte do esta dentro de box*/
+.box1 p:nth-child(3),
+.box2 p:nth-child(3),
+.box3 p:nth-child(3),
+.box4 p:nth-child(3),
+.box5 p:nth-child(3),
+.box6 p:nth-child(3){
+    
+   text-align: center; 
+  font-family: arial;
+  font-size: 20px;
+ /* width: 25px;*/
+  color: white;
+ /* margin: 0px 0px 20px 0px ;*/
+     
+}
+.box1 button,
+.box2 button,
+.box3 button,
+.box4 button,
+.box5 button,
+.box6 button{
+    width: 100px;
+    height: 30px;
+    background-color:palevioletred;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    border: none;
+}
+/*footer*/
+.footer{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    box-shadow: 15px 1px 12px  black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px ; 
+}
+.footer p:nth-child(1){
+    font-size: 30px;
+    color: #191919;
+    line-height: 10px;
+}
+.footer p:nth-child(2){
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    line-height: 10px;
+}
+.footer p:nth-child(3){
+    font-size: 20px;
+    color: black;
+    line-height: 10px;
+}
+.footer p:nth-child(4){
+    font-size: 20px;
+    color: black;
+    line-height: 10px;
+}
+.footer p:nth-child(5){
+    font-size: 20px;
+    color: black;
+    line-height: 10px;
+}
+.footer p:nth-child(6){
+    font-size: 20px;
+    color: black;
+    line-height: 10px;
+}
+
+.sevios-texto1 p:nth-child(1){
+    font-family: 'arial';
+    font-weight: bold;
+    color:black;
+    font-size: 30px;
+    line-height: 10px;
+    display: flex;
+    position: center;
+}
+/* sobre mim */
+.conte-sobre{
+    padding: 50px;
+    font-size: 30px;
+}
+
+/* responsivo*/
+@media only screen and (max-width){
+    body{
+        font-size: 25px;
+    }
+    
+}
